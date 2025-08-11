@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appels d'offres au Maroc</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Appels d'offres au Maroc</h1>
+    </header>
+    <main class="container">
+      <section id="search-section" class="side-panel">
+        <h2>Recherche d'appels d'offres</h2>
+        <form id="searchForm">
+          <input type="text" id="keyword" placeholder="Mot-clé" />
+
+          <select id="source">
+            <option value="all">Tous les sites</option>
+            <option value="finances">Ministère des Finances</option>
+            <option value="credit_agricole">Crédit Agricole</option>
+            <option value="equipement">Ministère de l'Équipement</option>
+          </select>
+
+          <button type="button" id="toggleAdvanced">Recherche avancée</button>
+          <button type="submit">Chercher</button>
+        </form>
+        <div class="ongleFlottante">
+          <div class="cancel">X</div>
+          <div class="advancedSearchForm"></div>
+        </div>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/advancedSearch.js"></script>
+  </body>
+</html>
